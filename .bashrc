@@ -11,6 +11,32 @@ bind 'set menu-complete-display-prefix on'
 # 4. Colorize the completions to match your 'ls' colors
 bind 'set colored-stats on'
 
+echo '' >> ~/.bashrc
+echo '# Explicitly load pass completion (fixes menu-complete compatibility)' >> ~/.bashrc
+echo 'if [ -f /usr/share/bash-completion/completions/pass ]; then' >> ~/.bashrc
+echo '    . /usr/share/bash-completion/completions/pass' >> ~/.bashrc
+echo 'fi' >> ~/.bashrc
+
 if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
+fi
+
+# Explicitly load pass completion (fixes menu-complete compatibility)
+if [ -f /usr/share/bash-completion/completions/pass ]; then
+    . /usr/share/bash-completion/completions/pass
+fi
+
+# Explicitly load pass completion (fixes menu-complete compatibility)
+if [ -f /usr/share/bash-completion/completions/pass ]; then
+    . /usr/share/bash-completion/completions/pass
+fi
+
+# Explicitly load pass completion (fixes menu-complete compatibility)
+if [ -f /usr/share/bash-completion/completions/pass ]; then
+    . /usr/share/bash-completion/completions/pass
+fi
+
+# Explicitly load pass completion (fixes menu-complete compatibility)
+if [ -f /usr/share/bash-completion/completions/pass ]; then
+    . /usr/share/bash-completion/completions/pass
 fi
